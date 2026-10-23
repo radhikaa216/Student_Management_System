@@ -1,0 +1,166 @@
+
+.enrollments-page {
+  width: 100%;
+  color: #172554;
+}
+
+.enrollments-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.enrollments-heading h2 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.enrollments-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+.enrollments-heading button,
+.enrollment-form > button,
+.enrollment-filter-actions button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.enrollment-form,
+.enrollment-filters,
+.enrollment-table-card {
+  padding: 24px;
+  margin-bottom: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+}
+
+.enrollment-form h3,
+.enrollment-filters h3,
+.enrollment-table-card h3 {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 19px;
+}
+
+.enrollment-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 16px;
+  margin-bottom: 20px;
+}
+
+.enrollment-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.enrollment-form-grid input,
+.enrollment-form-grid select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #172554;
+  font: inherit;
+  font-size: 13px;
+}
+
+.enrollment-form-grid input:focus,
+.enrollment-form-grid select:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+}
+
+.enrollment-form > button {
+  margin-top: 2px;
+}
+
+.enrollment-filter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.enrollment-filter-actions .clear-filter {
+  background: #64748b;
+}
+
+.enrollment-message {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.enrollment-message.error {
+  color: #b91c1c;
+  background: #fee2e2;
+}
+
+.enrollment-message.success {
+  color: #166534;
+  background: #dcfce7;
+}
+
+.enrollment-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.enrollment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.enrollment-table th {
+  padding: 14px 10px;
+  background: #f8fafc;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.enrollment-table td {
+  padding: 13px 10px;
+  border-bottom: 1px solid #e2e8f0;
+  overflow-wrap: anywhere;
+}
+
+.delete-enrollment {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  color: #b91c1c;
+  background: #fee2e2;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .enrollments-heading {
+    align-items: flex-start;
+  }
+
+  .enrollment-form,
+  .enrollment-filters,
+  .enrollment-table-card {
+    padding: 16px;
+  }
+
+  .enrollment-form-grid {
+    grid-template-columns: 1fr;
+  }
+}

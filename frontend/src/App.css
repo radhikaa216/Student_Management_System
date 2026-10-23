@@ -1,0 +1,23 @@
+
+.dashboard-card-button {
+  width: 100%;
+  border: none;
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(25, 45, 80, 0.12);
+}
+
+.back-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 7px;
+  color: #ffffff;
+  background: #475569;
+  cursor: pointer;
+}
